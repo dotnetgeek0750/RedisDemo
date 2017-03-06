@@ -22,7 +22,7 @@ namespace RedisDemo
 
 
 
-            Dictionary<string, PropertyInfo> dict = new Dictionary<string, PropertyInfo>();
+            var  dict = new Dictionary<string, PropertyInfo>();
 
             for (int i = 1; i < 10; i++)
             {
