@@ -45,6 +45,8 @@ namespace RedisDemo
                 for (var a = 0; a < aa.Count; a++)
                 {
                     hashEntries[a] = new HashEntry(keys[a], values[a]);
+
+
                 }
                 db.HashSet(key, hashEntries);
             }
