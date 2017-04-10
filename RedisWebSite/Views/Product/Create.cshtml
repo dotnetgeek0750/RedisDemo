@@ -1,0 +1,28 @@
+﻿@using RedisModelEntity
+
+@model RedisModelEntity.Product
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>新增产品</title>
+</head>
+<body>
+    <div>
+        @Html.ValidationSummary()
+        @using (Html.BeginForm())
+        {
+            <p>产品名称：@Html.TextBoxFor(p => p.Name)</p>
+            <p>产品售价：@Html.TextBoxFor(p => p.Price)</p>
+            <p>产品描述：@Html.TextBoxFor(p => p.Desc)</p>
+
+            <button type="submit">提交</button>
+        }
+    </div>
+</body>
+</html>

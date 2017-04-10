@@ -7,6 +7,7 @@ using CtripSZ.Frameworks.Extends;
 
 using StackExchange.Redis;
 using System.Reflection;
+using RedisDemoConsole;
 
 namespace RedisDemo
 {
@@ -14,15 +15,10 @@ namespace RedisDemo
     {
         static void Main(string[] args)
         {
+            var conn = RedisHelper.GetRedisConn;
+            IDatabase db = conn.GetDatabase();
 
-            //ConnectionMultiplexer redis1 = ConnectionMultiplexer.Connect("172.18.21.168:6304"); //pbs
-
-            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("192.168.80.131:6379");
-            IDatabase db = redis.GetDatabase();
-
-
-
-            var  dict = new Dictionary<string, PropertyInfo>();
+            var dict = new Dictionary<string, PropertyInfo>();
 
             for (int i = 1; i < 10; i++)
             {
@@ -45,13 +41,9 @@ namespace RedisDemo
                 for (var a = 0; a < aa.Count; a++)
                 {
                     hashEntries[a] = new HashEntry(keys[a], values[a]);
-
-
                 }
                 db.HashSet(key, hashEntries);
             }
-
-
 
             Console.WriteLine("success");
 
