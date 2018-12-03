@@ -16,6 +16,16 @@ namespace StringIncrement计数器
         public Form1()
         {
             InitializeComponent();
+
+            using (ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost:6379"))
+            {
+                string NewsCount = "news_count";
+                //默认是访问db0数据库，可以通过方法参数指定数字访问不同的数据库
+                IDatabase db = redis.GetDatabase();
+                //给Key增加1
+                string val = db.StringGet(NewsCount);
+                label2.Text = val.ToString();
+            }
         }
 
 

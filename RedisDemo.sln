@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisModelEntity", "RedisMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringIncrement计数器", "StringIncrement计数器\StringIncrement计数器.csproj", "{012847EC-2756-4938-AE08-73FC92DEDBF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListConsumer", "ListConsumer\ListConsumer.csproj", "{828C92C7-7F43-4C91-9AC3-E79ADBE8F202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListProducer", "ListProducer\ListProducer.csproj", "{B0AFF928-77F2-4FC8-AD0A-7683473356B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RedisList", "RedisList", "{7C0820A2-FA2F-4F78-AD9C-D670192DD26F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,21 @@ Global
 		{012847EC-2756-4938-AE08-73FC92DEDBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{012847EC-2756-4938-AE08-73FC92DEDBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{012847EC-2756-4938-AE08-73FC92DEDBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828C92C7-7F43-4C91-9AC3-E79ADBE8F202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828C92C7-7F43-4C91-9AC3-E79ADBE8F202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828C92C7-7F43-4C91-9AC3-E79ADBE8F202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828C92C7-7F43-4C91-9AC3-E79ADBE8F202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0AFF928-77F2-4FC8-AD0A-7683473356B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AFF928-77F2-4FC8-AD0A-7683473356B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AFF928-77F2-4FC8-AD0A-7683473356B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AFF928-77F2-4FC8-AD0A-7683473356B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{828C92C7-7F43-4C91-9AC3-E79ADBE8F202} = {7C0820A2-FA2F-4F78-AD9C-D670192DD26F}
+		{B0AFF928-77F2-4FC8-AD0A-7683473356B0} = {7C0820A2-FA2F-4F78-AD9C-D670192DD26F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3311A9A0-7BD6-4060-B073-5A1864522EE6}
