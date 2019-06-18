@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisWebSite", "RedisWebSit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisModelEntity", "RedisModelEntity\RedisModelEntity.csproj", "{36B96AE1-1F28-42D2-8C14-28F4E816637F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringIncrement计数器", "StringIncrement计数器\StringIncrement计数器.csproj", "{012847EC-2756-4938-AE08-73FC92DEDBF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListConsumer", "ListConsumer\ListConsumer.csproj", "{828C92C7-7F43-4C91-9AC3-E79ADBE8F202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListProducer", "ListProducer\ListProducer.csproj", "{B0AFF928-77F2-4FC8-AD0A-7683473356B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RedisList", "RedisList", "{7C0820A2-FA2F-4F78-AD9C-D670192DD26F}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisBasic", "RedisBasic\RedisBasic.csproj", "{2E922958-C949-412B-AC4E-2DA2F1B1FF9D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCoreUseRedisSession", "WebCoreUseRedisSession\WebCoreUseRedisSession.csproj", "{44F1AB98-E497-41A0-A2A3-8E493F36C7AD}"
@@ -25,19 +33,8 @@ Global
 		{36B96AE1-1F28-42D2-8C14-28F4E816637F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36B96AE1-1F28-42D2-8C14-28F4E816637F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36B96AE1-1F28-42D2-8C14-28F4E816637F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E922958-C949-412B-AC4E-2DA2F1B1FF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E922958-C949-412B-AC4E-2DA2F1B1FF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E922958-C949-412B-AC4E-2DA2F1B1FF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E922958-C949-412B-AC4E-2DA2F1B1FF9D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44F1AB98-E497-41A0-A2A3-8E493F36C7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44F1AB98-E497-41A0-A2A3-8E493F36C7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44F1AB98-E497-41A0-A2A3-8E493F36C7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44F1AB98-E497-41A0-A2A3-8E493F36C7AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {088EFCBD-05AF-4B5D-A358-6F9E2DA4DDEB}
 	EndGlobalSection
 EndGlobal
